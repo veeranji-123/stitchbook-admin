@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const { jwtSecret } = require('./config');
+const { jwtSecret } = require('../config');
 
 function requireAdmin(req, res, next) {
   const header = req.headers.authorization;
